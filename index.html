@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            background: cyan;
+        }
+        
+        @media (max-width:800px) {
+            #qrCodeImg {
+                display: none;
+            }
+            /*hide QR
+code when its mobile size */
+            h1 {
+                background: lightgreen;
+            }
+            h1::after {
+                content: "(mobile)";
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>hi</h1>
+    <header>
+        <h1>My Web App!</h1>
+    </header>
+    <main>
+        Contents here
+    </main>
+    <footer>
+        <img id="qrCodeImg" src="qrcodeimg.png">
+    </footer>
 </body>
+
 </html>
