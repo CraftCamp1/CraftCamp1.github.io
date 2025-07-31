@@ -2,38 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1 {
-            background: cyan;
-        }
-        
-        @media (max-width:800px) {
-            #qrCodeImg {
-                display: none;
-            }
-            h1 {
-                background: lightgreen;
-            }
-            h1::after {
-                content: "(mobile)";
-            }
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All About Bananas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>My Web App!</h1>
+        <h1>All About Bananas</h1>
+        <div id="section-buttons" class="section-nav">
+            <button data-target="fun-facts" class="active">Fun Facts</button>
+            <button data-target="history">History</button>
+            <button data-target="memes">Memes</button>
+            <button data-target="game-section">Play</button>
+        </div>
     </header>
+
     <main>
-        Contents here
+        <section id="fun-facts" class="fun-facts-section">
+            <h2>Fun Facts</h2>
+            <ul class="fact-list">
+                <li>Bananas are technically berries. Weirdly, strawberries aren't. Biology is just making stuff up now.</li>
+                <li>If you throw a banana into water, it floats. Turns out, bananas don’t like to sink.</li>
+                <li>There are over a thousand types of bananas, but most of us only ever meet one. Feels a bit unfair.</li>
+                <li>The kind you see in stores is called Cavendish. Sounds like it should come with a butler.</li>
+                <li>Bananas grow on what looks like a tree, but surprise — it’s actually a giant herb. Nature’s prank.</li>
+                <li>A banana plant can grow taller than your living room ceiling. It’s not messing around.</li>
+                <li>If a mosquito bites you, rub a banana peel on it. It actually helps. No one knows why.</li>
+                <li>Bananas carry a little mood boost in them. They’ve got stuff that helps you feel better, naturally.</li>
+                <li>People in Uganda eat more bananas per person than anywhere else. They know what’s up.</li>
+                <li>Bananas are about 75% water. So yes, you’re basically drinking when you eat one.</li>
+                <li>If you put a banana next to an apple, it’ll ripen faster. The apple is basically peer pressuring it.</li>
+                <li>You share about 60% of your DNA with a banana. That explains a lot, honestly.</li>
+                <li>Banana peels can shine shoes. Which is pretty impressive for something most people throw away.</li>
+                <li>India grows more bananas than any other country. If bananas had a capital, it’d probably be there.</li>
+                <li>Bananas are slightly radioactive. Don’t worry, not enough to turn you into a superhero.</li>
+                <li>The first bananas humans ever grew came from Southeast Asia. We’ve been into them for a while.</li>
+                <li>At one point, bananas were the most exported fruit in the world. They basically ran the fruit industry.</li>
+                <li>Once a banana plant gives you bananas, it dies. But don’t worry — it sends out a new shoot before it goes.</li>
+                <li>In the U.S., bananas are the most eaten fruit. Take that, apples.</li>
+                <li>Companies like Chiquita and Dole basically built banana empires. They made it a serious business.</li>
+                <li>Bananas were brought to the Americas by Portuguese sailors. Thanks for that, I guess.</li>
+                <li>The term “banana republic” originally had to do with actual bananas. History is strange like that.</li>
+                <li>Monkeys peel bananas from the bottom, not the stem. They’ve clearly figured out the better way.</li>
+                <li>The average banana has about 100 calories. Not bad for something that tastes like dessert.</li>
+                <li>They’re packed with potassium and vitamin B6. Basically, bananas are low-key health kings.</li>
+                <li>No fat, no cholesterol, no drama. Bananas are chill like that.</li>
+                <li>People actually turn banana plants into fabric and paper. Bananas can be clothes. Wild.</li>
+                <li>Bananas can help with heartburn. It’s like they’re trying to make up for how fast we eat them.</li>
+                <li>In Japan, people sometimes eat the peels. No waste, just commitment.</li>
+                <li>The word “banana” probably comes from an old word for “finger.” Makes sense when you look at one.</li>
+                <li>Frozen bananas can be blended into ice cream. No dairy, no nonsense, just frozen banana magic.</li>
+                <li>Banana plants grow little side shoots called suckers. They’re basically banana backups.</li>
+                <li>Bananas are picked green and ripen later. They just need some time to figure themselves out.</li>
+                <li>Banana peels can help with acne. Who needs skincare when you’ve got fruit?</li>
+                <li>Run out of eggs? Mashed bananas can step in for baking. They’re team players like that.</li>
+                <li>Banana plants grow, fruit, die, and repeat. It’s dramatic, but they get the job done.</li>
+                <li>A bunch of bananas is called a “hand” and each banana is a “finger.” Makes it weirdly personal.</li>
+                <li>The little black dots inside? Those are seeds. They’re not doing much, but they’re there.</li>
+                <li>The more a banana ripens, the sweeter it gets. Like your nicest friend on a good day.</li>
+                <li>Athletes love bananas. Easy to carry, easy to eat, full of energy. Basically fruit fuel.</li>
+                <li>Bananas first hit U.S. grocery stores in the 1800s. Vintage fruit, in a way.</li>
+                <li>Banana peels break down fast and feed your garden. Don’t toss them — compost them.</li>
+                <li>The banana split was invented in Pennsylvania. Some genius decided one banana wasn’t enough.</li>
+                <li>You can mash a banana into a face mask. It’s weird, but it feels kind of nice.</li>
+                <li>The banana emoji gets used in... creative ways online. Let’s leave it at that.</li>
+                <li>Some people are allergic to bananas. A tragedy, honestly.</li>
+                <li>There’s an entire museum in California just for bananas. You can’t make this stuff up.</li>
+                <li>In 2001, a guy robbed a bank using a banana. It wasn’t even peeled. That’s confidence.</li>
+                <li>There’s a real Banana Day every April. You probably missed it, but it’ll come back around.</li>
+            </ul>
+            <div class="fact-controls">
+                <button id="factRandom">Surprise Me!</button>
+            </div>
+        </section>
+
+        <!-- index.html -->
+        <section id="history" class="history-section">
+            <h2>🕰️ A Banana Odyssey</h2>
+
+            <div class="history-slideshow">
+                <div class="slides">
+                    <!-- Slide 0 -->
+                    <div class="slide active" data-index="0">
+                        <img src="images/railroad_debt.jpg" alt="Vintage map of Honduran railroad lines with British bank logos">
+                        <h3>Railroad Debt & Political Leverage</h3>
+                        <p>By 1900, Honduras owed some $100 million to British banks for a half‑built national railroad—and faced potential British naval action if it defaulted.</p>
+                        <p>The U.S. tapped J.P. Morgan to refinance the debt in exchange for control of rail lines and import taxes—blindsiding smaller exporters.</p>
+                    </div>
+
+                    <!-- Slide 1 -->
+                    <div class="slide" data-index="1">
+                        <img src="images/sam_coup.jpg" alt="Archival photo of Sam Zemurray or stylized coup poster">
+                        <h3>Sam’s Secret Coup Plan</h3>
+                        <p>When Honduran leaders balked on his tax‑breaks, Sam Zemurray quietly funded a rebellion to overthrow them and install a friendlier president—defying J.P. Morgan and the U.S. State Dept.</p>
+                        <p>This set the template for “banana republic” politics, where fruit companies pulled presidential strings.</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide" data-index="2">
+                        <img src="images/banana_wars.jpg" alt="Newspaper montage about Sherman Antitrust vs United Fruit">
+                        <h3>Antitrust & the Banana “Wars”</h3>
+                        <p>Responding to a U.S. Justice Dept. antitrust probe, United Fruit sold its 10 % stake in Zemurray’s Kiamal Fruit—creating a faux competitor to dodge monopoly charges.</p>
+                        <p>It sparked a full‑blown “banana war,” with UF and Kiamal jockeying for control of plantations, waterways and markets.</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide" data-index="3">
+                        <img src="images/banana_massacre.jpg" alt="Black-and-white photo of massacre aftermath">
+                        <h3>The Banana Massacre (1928)</h3>
+                        <p>When Colombian workers struck for better pay, UF‑backed troops slaughtered unarmed men, women and children—justifying it as anti‑communist action.</p>
+                        <p>This cemented UF’s image as a corporate state, capable of ordering mass murder to protect profits.</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide" data-index="4">
+                        <img src="images/cia_guatemala.jpg" alt="Declassified CIA map of Guatemala">
+                        <h3>CIA & the 1954 Guatemala Coup</h3>
+                        <p>UF financed PR campaigns labeling President Árbenz a Communist threat. The CIA trained rebels, bombarded the country, and forced Árbenz’s resignation.</p>
+                        <p>This was one of the CIA’s first overt regime‑change ops, executed on UF ships and with its money.</p>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="slide" data-index="5">
+                        <img src="images/gros_michel_vs_cavendish.jpg" alt="Side‑by‑side of Gros Michel vs Cavendish bananas">
+                        <h3>Gros Michel vs. Cavendish</h3>
+                        <p>Until the 1950s, “Big Mike” (Gros Michel) ruled—but its genetic uniformity meant Panama disease could wipe entire plantations.</p>
+                        <p>UF sprayed poisonous fungicide en masse—poisoning workers—before switching to Cavendish, which was briefly disease‑resistant.</p>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="slide" data-index="6">
+                        <img src="images/ww2_bananas.jpg" alt="UF banana ship repurposed as troop transport">
+                        <h3>World War II Disruption & Diversification</h3>
+                        <p>Britain and the U.S. banned banana imports as a “luxury,” seizing UF’s “Great White Fleet” for wartime use—leaving fields to rot.</p>
+                        <p>Zemurray pivoted UF into sugarcane, hemp and palm oil—military‑essential crops—to keep the business afloat.</p>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="slide" data-index="7">
+                        <img src="images/postwar_antitrust.jpg" alt="Courtroom sketch of antitrust case">
+                        <h3>Post‑War Antitrust & Decline</h3>
+                        <p>In 1958 UF settled another antitrust suit by selling off 33 fields to a rival—marking the beginning of the end of its foreign empire.</p>
+                        <p>Legal blows and emerging TR4 strains forced UF into perpetual decline.</p>
+                    </div>
+
+                    <!-- Slide 8 -->
+                    <div class="slide" data-index="8">
+                        <img src="images/chiquita_rebrand.jpg" alt="Chiquita and United Fruit logos side by side">
+                        <h3>Legacy & Rebranding</h3>
+                        <p>In the 1970s UF rebranded as Chiquita to shake its dark reputation—even so, it faced a $25 million DOJ fine in 2007 for terror‑group payments in Colombia.</p>
+                        <p>Today’s banana business still wrestles with labor rights, disease and political meddling—a legacy born in the “Banana Wars.”</p>
+                    </div>
+                </div>
+
+                <!-- Dot Navigation -->
+                <div class="slide-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                    <span class="dot" data-index="6"></span>
+                    <span class="dot" data-index="7"></span>
+                    <span class="dot" data-index="8"></span>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="memes">
+            <h2>Banana Memes</h2>
+        </section>
+
+        <section id="game-section">
+            <h2>🍌 Banana Clicker</h2>
+            <div class="container">
+                <div id="game">
+                    <div id="topBar">
+                        <span id="scoreBox">Bananas: 0</span>
+                        <span id="bananaRate">Rate: 0/sec</span>
+                    </div>
+                    <img id="banana" src="banana.png" alt="Click me!" draggable="false">
+                    <div class="upgrades" id="upgrades"></div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <img id="qrCodeImg" src="qrcodeimg.png">
-    </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
