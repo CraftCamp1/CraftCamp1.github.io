@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All About Bananas</title>
+    <title>Bananas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,10 +12,14 @@
     <header>
         <h1>All About Bananas</h1>
         <div id="section-buttons" class="section-nav">
-            <button data-target="fun-facts" class="active">Fun Facts</button>
-            <button data-target="history">History</button>
-            <button data-target="memes">Memes</button>
-            <button data-target="game-section">Play</button>
+            <a href="#fun-facts" class="active">Fun Facts</a>
+            <a href="#history">History</a>
+            <a href="#memes">Memes</a>
+            <a href="#game-section">Play</a>
+        </div>
+        <div class="qr-container">
+            <img src="images/qr.png" alt="qr code" title="qr code" class="qr">
+            <span class="qr-label">Scan to open on your phone</span>
         </div>
     </header>
 
@@ -74,108 +78,121 @@
                 <li>There’s a real Banana Day every April. You probably missed it, but it’ll come back around.</li>
             </ul>
             <div class="fact-controls">
-                <button id="factRandom">Surprise Me!</button>
+                <a id="factRandom" class="btn">Surprise Me!</a>
             </div>
         </section>
 
-        <!-- index.html -->
-        <section id="history" class="history-section">
-            <h2>🕰️ A Banana Odyssey</h2>
+        <section id="history" class="history-section storyboard">
+            <h2>🕰️ Bananas Then and Now</h2>
 
-            <div class="history-slideshow">
-                <div class="slides">
-                    <!-- Slide 0 -->
-                    <div class="slide active" data-index="0">
-                        <img src="images/railroad_debt.jpg" alt="Vintage map of Honduran railroad lines with British bank logos">
-                        <h3>Railroad Debt & Political Leverage</h3>
-                        <p>By 1900, Honduras owed some $100 million to British banks for a half‑built national railroad—and faced potential British naval action if it defaulted.</p>
-                        <p>The U.S. tapped J.P. Morgan to refinance the debt in exchange for control of rail lines and import taxes—blindsiding smaller exporters.</p>
-                    </div>
-
-                    <!-- Slide 1 -->
-                    <div class="slide" data-index="1">
-                        <img src="images/sam_coup.jpg" alt="Archival photo of Sam Zemurray or stylized coup poster">
-                        <h3>Sam’s Secret Coup Plan</h3>
-                        <p>When Honduran leaders balked on his tax‑breaks, Sam Zemurray quietly funded a rebellion to overthrow them and install a friendlier president—defying J.P. Morgan and the U.S. State Dept.</p>
-                        <p>This set the template for “banana republic” politics, where fruit companies pulled presidential strings.</p>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="slide" data-index="2">
-                        <img src="images/banana_wars.jpg" alt="Newspaper montage about Sherman Antitrust vs United Fruit">
-                        <h3>Antitrust & the Banana “Wars”</h3>
-                        <p>Responding to a U.S. Justice Dept. antitrust probe, United Fruit sold its 10 % stake in Zemurray’s Kiamal Fruit—creating a faux competitor to dodge monopoly charges.</p>
-                        <p>It sparked a full‑blown “banana war,” with UF and Kiamal jockeying for control of plantations, waterways and markets.</p>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="slide" data-index="3">
-                        <img src="images/banana_massacre.jpg" alt="Black-and-white photo of massacre aftermath">
-                        <h3>The Banana Massacre (1928)</h3>
-                        <p>When Colombian workers struck for better pay, UF‑backed troops slaughtered unarmed men, women and children—justifying it as anti‑communist action.</p>
-                        <p>This cemented UF’s image as a corporate state, capable of ordering mass murder to protect profits.</p>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div class="slide" data-index="4">
-                        <img src="images/cia_guatemala.jpg" alt="Declassified CIA map of Guatemala">
-                        <h3>CIA & the 1954 Guatemala Coup</h3>
-                        <p>UF financed PR campaigns labeling President Árbenz a Communist threat. The CIA trained rebels, bombarded the country, and forced Árbenz’s resignation.</p>
-                        <p>This was one of the CIA’s first overt regime‑change ops, executed on UF ships and with its money.</p>
-                    </div>
-
-                    <!-- Slide 5 -->
-                    <div class="slide" data-index="5">
-                        <img src="images/gros_michel_vs_cavendish.jpg" alt="Side‑by‑side of Gros Michel vs Cavendish bananas">
-                        <h3>Gros Michel vs. Cavendish</h3>
-                        <p>Until the 1950s, “Big Mike” (Gros Michel) ruled—but its genetic uniformity meant Panama disease could wipe entire plantations.</p>
-                        <p>UF sprayed poisonous fungicide en masse—poisoning workers—before switching to Cavendish, which was briefly disease‑resistant.</p>
-                    </div>
-
-                    <!-- Slide 6 -->
-                    <div class="slide" data-index="6">
-                        <img src="images/ww2_bananas.jpg" alt="UF banana ship repurposed as troop transport">
-                        <h3>World War II Disruption & Diversification</h3>
-                        <p>Britain and the U.S. banned banana imports as a “luxury,” seizing UF’s “Great White Fleet” for wartime use—leaving fields to rot.</p>
-                        <p>Zemurray pivoted UF into sugarcane, hemp and palm oil—military‑essential crops—to keep the business afloat.</p>
-                    </div>
-
-                    <!-- Slide 7 -->
-                    <div class="slide" data-index="7">
-                        <img src="images/postwar_antitrust.jpg" alt="Courtroom sketch of antitrust case">
-                        <h3>Post‑War Antitrust & Decline</h3>
-                        <p>In 1958 UF settled another antitrust suit by selling off 33 fields to a rival—marking the beginning of the end of its foreign empire.</p>
-                        <p>Legal blows and emerging TR4 strains forced UF into perpetual decline.</p>
-                    </div>
-
-                    <!-- Slide 8 -->
-                    <div class="slide" data-index="8">
-                        <img src="images/chiquita_rebrand.jpg" alt="Chiquita and United Fruit logos side by side">
-                        <h3>Legacy & Rebranding</h3>
-                        <p>In the 1970s UF rebranded as Chiquita to shake its dark reputation—even so, it faced a $25 million DOJ fine in 2007 for terror‑group payments in Colombia.</p>
-                        <p>Today’s banana business still wrestles with labor rights, disease and political meddling—a legacy born in the “Banana Wars.”</p>
-                    </div>
+            <div class="storyboard">
+                <!-- intro -->
+                <div class="story-section" id="story-intro">
+                    <img src="images/slideimg1.png" alt="Portrait of early banana trader">
+                    <h3>Introduction</h3>
+                    <p>In the late 1800s, a penniless teenager named Sam saw ripe bananas as trash. He bought them cheap, raced across states in a boxcar, and sold them for a profit. His first win set the stage for today’s global banana trade.</p>
                 </div>
 
-                <!-- Dot Navigation -->
-                <div class="slide-dots">
-                    <span class="dot active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
-                    <span class="dot" data-index="3"></span>
-                    <span class="dot" data-index="4"></span>
-                    <span class="dot" data-index="5"></span>
-                    <span class="dot" data-index="6"></span>
-                    <span class="dot" data-index="7"></span>
-                    <span class="dot" data-index="8"></span>
+                <!-- first banana -->
+                <div class="story-section" id="story-first-banana">
+                    <img src="images/slideimg2.png" alt="Vintage market stall with bananas">
+                    <h3>The First Banana</h3>
+                    <p>Few Americans had tasted a banana back then. Sam learned every job in his uncle’s store so he knew what customers wanted. When he spotted that yellow fruit, he bet his savings on selling riped fruit fast. That moment created a new
+                        demand for bananas in supermarkets everywhere.</p>
+                </div>
+
+                <!-- race against time -->
+                <div class="story-section" id="story-race">
+                    <img src="images/slideimg3.png" alt="Old railway boxcar loaded with produce">
+                    <h3>A Race Against Time</h3>
+                    <p>Without refrigeration, up to 15% of bananas spoiled at sea. Sam bought a train car, wired telegraphs to alert towns, and sold every banana before it turned black. Today’s cold chains and fast logistics still borrow from his fast-sell
+                        playbook.
+                    </p>
+                </div>
+
+                <!-- the empire -->
+                <div class="story-section" id="story-empire">
+                    <img src="images/slideimg4.png" alt="Early 20th century banana plantation">
+                    <h3>Building an Empire</h3>
+                    <p>By 1903 Sam signed a deal with United Fruit to buy every ripe batch. He then bought ships, built plantations in Honduras and bribed officials to cut costs. That model of vertical control still echoes in modern agro-business, for better
+                        and worse.</p>
+                </div>
+
+                <!-- todays impact -->
+                <div class="story-section" id="story-conclusion">
+                    <img src="images/slideimg5.png" alt="Modern banana farm with blue plastic covers">
+                    <h3>Today’s Impact</h3>
+                    <p>Bananas remain one of the world’s top crops. Supply chains, fair-trade labels and disease-resistant varieties all trace back to Sam’s strategies. Next time you peel one for breakfast, you’re tasting a century of logistics, science
+                        and social change.</p>
                 </div>
             </div>
         </section>
-
-
 
         <section id="memes">
             <h2>Banana Memes</h2>
+            <div class="meme-of-the-day">
+                <h3>Meme of the Day</h3>
+                <img src="images/meme.png" alt="Meme of the Day">
+                <h4>“Banana Time Warp”</h4>
+                <p>Supermarket bananas seem survive for weeks, but the moment they enter your home? Instant decay. Your kitchen is just a ripe zone.</p>
+            </div>
+            <form id="memeForm" class="meme-form">
+                <div class="field">
+                    <label for="memeTitle">Meme Title</label>
+                    <input type="text" id="memeTitle" name="memeTitle" placeholder="Give it a fun name" required>
+                </div>
+
+                <div class="field">
+                    <label for="memeDesc">Description</label>
+                    <textarea id="memeDesc" name="memeDesc" rows="3" placeholder="What’s going on here?" required></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="memeFile">Upload Image</label>
+                    <input type="file" id="memeFile" name="memeFile" accept="image/*" required>
+                </div>
+
+                <div class="field">
+                    <label for="memeCategory">Category</label>
+                    <select id="memeCategory" name="memeCategory" required>
+                        <option value="">— Select one —</option>
+                        <option value="funny">Funny</option>
+                        <option value="wholesome">Wholesome</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="political">Political</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <fieldset class="field">
+                    <legend>Tags (select all that apply)</legend>
+                    <label><input type="checkbox" name="tags" value="dank"> Dank</label>
+                    <label><input type="checkbox" name="tags" value="relatable"> Relatable</label>
+                    <label><input type="checkbox" name="tags" value="surreal"> Surreal</label>
+                    <label><input type="checkbox" name="tags" value="nsfw"> NSFW</label>
+                </fieldset>
+
+                <fieldset class="field">
+                    <legend>Visibility</legend>
+                    <label><input type="radio" name="visibility" value="public" checked> Public</label>
+                    <label><input type="radio" name="visibility" value="private"> Private</label>
+                </fieldset>
+
+                <div class="field">
+                    <label for="memeSource">Original Source URL</label>
+                    <input type="url" id="memeSource" name="memeSource" placeholder="https://meme.com/banana">
+                </div>
+
+                <div class="field">
+                    <label for="memeDate">Date Created</label>
+                    <input type="date" id="memeDate" name="memeDate" required>
+                </div>
+
+                <div class="field">
+                    <button id="memeSubmit" class="btn">Submit Meme</button>
+                </div>
+            </form>
+            <div id="memeOutput" class="meme-output"></div>
         </section>
 
         <section id="game-section">
@@ -184,13 +201,17 @@
                 <div id="game">
                     <div id="topBar">
                         <span id="scoreBox">Bananas: 0</span>
+                        <span id="cpsBox">CPS: 0</span>
                         <span id="bananaRate">Rate: 0/sec</span>
                     </div>
-                    <img id="banana" src="banana.png" alt="Click me!" draggable="false">
+                    <img id="banana" src="images/banana.png" alt="Click me!" draggable="false">
                     <div class="upgrades" id="upgrades"></div>
                 </div>
             </div>
-        </section>
+            <a id="resetBtn" class="btn">Reset Game</a> </section>
+        <footer>
+            LabNo: 02 | Name: Timothy Goh | AdminNo: 231246A
+        </footer>
     </main>
     <script src="main.js"></script>
 </body>
